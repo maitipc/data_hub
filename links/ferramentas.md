@@ -1,10 +1,38 @@
 # Ferramentas
 
-- **Data Lakes vs Lakehouses** – [Link](https://link-para-artigo.com)  
-  Comparativo completo sobre arquiteturas modernas de dados.
+  ## Datawarehouses
 
-- **Engenharia de Dados para Iniciantes** – [Link](https://link-para-artigo2.com)  
-  Introdução prática com exemplos em Python e SQL.
+  - **Snowflakes** – [Link](https://kafka.apache.org/intro)  
+  Framework para streaming de dados em tempo real.
 
-- **Tendências de Data Engineering 2025** – [Link](https://link-para-artigo3.com)  
-  Principais tecnologias e ferramentas emergentes.
+  - **Amazon Redshift** – [Link](https://kafka.apache.org/intro)  
+  Framework para streaming de dados em tempo real.
+
+  - **Google Big Query** – [Link](https://kafka.apache.org/intro)  
+  Framework para streaming de dados em tempo real.
+
+  ## Big Data
+
+  - **Apache Spark** – [Link](https://kafka.apache.org/intro)  
+  Framework para streaming de dados em tempo real.
+
+  - **Hadoop** – [Link](https://kafka.apache.org/intro)  
+  Framework para streaming de dados em tempo real.
+
+  ## Streaming de Dados em Tempo Real
+
+  - **Apache Kafka** – [Link](https://kafka.apache.org/intro)  
+  Framework para streaming de dados em tempo real.
+
+  ## Visualização de Dados
+
+  - **Tableau** – [Link](https://kafka.apache.org/intro)  
+  Framework para streaming de dados em tempo real.
+
+  - **PowerBI** – [Link](https://kafka.apache.org/intro)  
+  Framework para streaming de dados em tempo real.
+
+  - **Google Big Query** – [Link](https://kafka.apache.org/intro)  
+  Framework para streaming de dados em tempo real.
+
+    

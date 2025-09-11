@@ -1,10 +1,7 @@
 # Artigos Interessantes
 
-- **Data Lakes vs Lakehouses** – [Link](https://link-para-artigo.com)  
-  Comparativo completo sobre arquiteturas modernas de dados.
+- **O que é ETL Reverso?** – [Link](https://blog.dsacademy.com.br/o-que-e-etl-reverso/)  
+  Compreender o conceito de ETL reverso
 
-- **Engenharia de Dados para Iniciantes** – [Link](https://link-para-artigo2.com)  
-  Introdução prática com exemplos em Python e SQL.
-
-- **Tendências de Data Engineering 2025** – [Link](https://link-para-artigo3.com)  
-  Principais tecnologias e ferramentas emergentes.
+- **Airbyte** – [Link](https://blog.dsacademy.com.br/airbyte-etl-e-elt-para-engenharia-de-dados/)  
+  Explicação, vantagens e desvantagens do Airbyte em processos ETL e ELT.

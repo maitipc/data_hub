@@ -1,10 +1,7 @@
 # Cursos
 
-- **Data Lakes vs Lakehouses** – [Link](https://link-para-artigo.com)  
-  Comparativo completo sobre arquiteturas modernas de dados.
+- **Fundamentos de Engenharia de Dados** – [Link](https://www.datascienceacademy.com.br/course/fundamentos-de-engenharia-de-dados)  
+  Curso gratuito de introdução a Engenharia de Dados.
 
-- **Engenharia de Dados para Iniciantes** – [Link](https://link-para-artigo2.com)  
-  Introdução prática com exemplos em Python e SQL.
-
-- **Tendências de Data Engineering 2025** – [Link](https://link-para-artigo3.com)  
-  Principais tecnologias e ferramentas emergentes.
+- **Curso de Python Gratuito** – [Link](https://www.datascienceacademy.com.br/course/fundamentos-de-linguagem-python-do-basico-a-aplicacoes-de-ia)  
+  Fundamentos de Python do básico a aplicações de IA.
