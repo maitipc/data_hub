@@ -1,6 +1,61 @@
-[
-  {"title": "Data Lakes vs Lakehouses", "category": "Artigo", "url": "https://link-para-artigo.com"},
-  {"title": "Kaggle Datasets", "category": "Dataset", "url": "https://www.kaggle.com/datasets"},
-  {"title": "Apache Kafka", "category": "Ferramenta", "url": "https://kafka.apache.org/"},
-  {"title": "Data Engineering on Google Cloud", "category": "Curso", "url": "https://link-para-curso.com"}
-]
+{
+  "Artigos": 
+  {
+    "ETL": [
+      {
+        "title": "O que é ETL Reverso?",
+        "url": "https://blog.dsacademy.com.br/o-que-e-etl-reverso/",
+        "description": "Explicação sobre ETL Reverso."
+      },
+      {
+        "title": "Airbyte em ETL e ELT",
+        "url": "https://blog.dsacademy.com.br/airbyte-etl-e-elt-para-engenharia-de-dados/",
+        "description": "Explicação, Vantagens e Desvantagens do Airbyte."
+      }
+    ]
+  },
+  "Cursos": [
+    {"title": "Fundamentos de Engenharia de Dados", "url": "https://www.datascienceacademy.com.br/course/fundamentos-de-linguagem-python-do-basico-a-aplicacoes-de-ia"},
+    {"title": "Fundamentos de Python do básico a aplicações de IA", "url": "https://www.datascienceacademy.com.br/course/fundamentos-de-linguagem-python-do-basico-a-aplicacoes-de-ia"}
+  ],
+  "Datasets": [
+    {
+      "title": "Random User Generator",
+      "url": "https://randomuser.me/",
+      "description": "Fonte de dados em Tempo Real via API"
+    },
+    {
+      "title": "Kaggle Datasets",
+      "url": "https://www.kaggle.com/datasets?fileType=csv",
+      "description": "Uma quantidade enorme de datasets disponíveis"
+    }
+  ],
+  "Ferramentas": {
+    "Data Warehouses": [
+      {
+        "title": "Snowflake",
+        "url": "https://www.snowflake.com/",
+        "description": "Plataforma de data warehouse em nuvem com escalabilidade elástica."
+      },
+      {
+        "title": "Amazon Redshift",
+        "url": "https://aws.amazon.com/redshift/",
+        "description": "Serviço de data warehouse totalmente gerenciado da AWS."
+      }
+    ],
+    "Streaming": [
+      {
+        "title": "Apache Kafka",
+        "url": "https://kafka.apache.org/",
+        "description": "Plataforma distribuída para processamento em streaming em tempo real."
+      }
+    ],
+    "Transformação": [
+      {
+        "title": "DBT",
+        "url": "https://www.getdbt.com/",
+        "description": "Ferramenta de transformação de dados com SQL, documentação e versionamento."
+      }
+    ]
+  }
+}

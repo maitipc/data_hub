@@ -1,33 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<title>Hub de Dados - Maiti</title>
-<style>
-  body { font-family: Arial, sans-serif; background: #f5f5f5; margin: 20px; }
-  h1 { color: #2c3e50; }
-  .card { background: #fff; border-radius: 8px; padding: 15px; margin: 10px 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
-  .category { font-weight: bold; color: #2980b9; }
-  a { text-decoration: none; color: #27ae60; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hub de Dados da Maiti</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      padding-top: 70px;
+      background-color: #121212; /* fundo dark */
+      color: #f1f1f1;
+    }
+    .card {
+      background-color: #1e1e1e; /* card escuro */
+      color: #f1f1f1;
+    }
+    .card-img-top {
+      width: 100%;
+      height: 180px;       /* altura uniforme */
+      object-fit: cover;   /* preenche sem deformar */
+    }
+    footer {
+      background-color: #1e1e1e;
+      padding: 20px 0;
+      margin-top: 50px;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
-<h1>📊 Hub de Dados - Maiti</h1>
-<div id="cards"></div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">📊 Hub de Dados</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-light" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="artigos.html">Artigos</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="cursos.html">Cursos</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="datasets.html">Datasets</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="ferramentas.html">Ferramentas</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<script>
-fetch('resources.json')
-  .then(response => response.json())
-  .then(data => {
-    const container = document.getElementById('cards');
-    data.forEach(item => {
-      const card = document.createElement('div');
-      card.className = 'card';
-      card.innerHTML = `<div class="category">${item.category}</div>
-                        <div><a href="${item.url}" target="_blank">${item.title}</a></div>`;
-      container.appendChild(card);
-    });
-  });
-</script>
+  <!-- Hero -->
+  <div class="container text-center my-5">
+    <h1 class="display-4 fw-bold">Bem-vindo ao Hub de Dados da Maiti</h1>
+    <p class="lead">Meu ponto de referência para artigos, cursos, datasets e ferramentas de dados.</p>
+  </div>
+
+  <!-- Cards principais -->
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm text-center">
+          <img src="imagens/artigos.png" class="card-img-top" alt="Artigos">
+          <div class="card-body">
+            <h5 class="card-title">📝 Artigos</h5>
+            <a href="artigos.html" class="btn btn-outline-light">Ver Artigos</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm text-center">
+          <img src="imagens/cursos.png" class="card-img-top" alt="Cursos">
+          <div class="card-body">
+            <h5 class="card-title">🎓 Cursos</h5>
+            <a href="cursos.html" class="btn btn-outline-light">Ver Cursos</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm text-center">
+          <img src="imagens/datasets.png" class="card-img-top" alt="Datasets">
+          <div class="card-body">
+            <h5 class="card-title">📂 Datasets</h5>
+            <a href="datasets.html" class="btn btn-outline-light">Ver Datasets</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm text-center">
+          <img src="imagens/ferramentas.png" class="card-img-top" alt="Ferramentas">
+          <div class="card-body">
+            <h5 class="card-title">🛠️ Ferramentas</h5>
+            <a href="ferramentas.html" class="btn btn-outline-light">Ver Ferramentas</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="text-center mt-5">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Maiti Puertas Crucelli | Hub de Dados</p>
+      <small>Atualizado de forma recorrente com recursos sobre dados.</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
