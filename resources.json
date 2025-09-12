@@ -31,30 +31,576 @@
     }
   ],
   "Ferramentas": {
+    "Bancos de Dados SQL": [
+      {
+        "title": "PostgreSQL",
+        "url": "https://www.postgresql.org/",
+        "description": "Banco de dados relacional open source, robusto e confiável.",
+        "details": {
+          "o_que_e": "Sistema de gerenciamento de banco de dados relacional open source, com suporte a SQL avançado, transações e extensões.",
+          "principais_componentes": [
+            "Postgres Server: motor de banco de dados",
+            "psql: interface de linha de comando",
+            "Extensions: como PostGIS para dados geográficos"
+          ],
+          "para_que_serve": [
+            "Armazenar e gerenciar dados relacionais",
+            "Suportar aplicações web, análises e BI"
+          ],
+          "quando_usar": [
+            "Quando precisa de transações ACID confiáveis",
+            "Para aplicações que exigem SQL completo e robustez"
+          ]
+        }
+      },
+      {
+        "title": "MySQL",
+        "url": "https://www.mysql.com/",
+        "description": "Banco relacional open source popular, usado em aplicações web.",
+        "details": {
+          "o_que_e": "Sistema de gerenciamento de banco de dados relacional open source, amplamente utilizado em aplicações web e sistemas corporativos.",
+          "principais_componentes": [
+            "MySQL Server: motor do banco",
+            "MySQL Workbench: interface gráfica",
+            "Replicação e clustering"
+          ],
+          "para_que_serve": [
+            "Armazenar dados estruturados",
+            "Suportar aplicações de pequeno a grande porte"
+          ],
+          "quando_usar": [
+            "Quando precisa de banco relacional confiável e testado",
+            "Para aplicações web e serviços que exigem SQL padrão"
+          ]
+        }
+      },
+      {
+        "title": "Microsoft SQL Server",
+        "url": "https://www.microsoft.com/en-us/sql-server",
+        "description": "Banco de dados relacional usado em ambientes corporativos Windows.",
+        "details": {
+          "o_que_e": "Sistema de gerenciamento de banco de dados relacional da Microsoft, amplamente utilizado em empresas que usam tecnologia Windows.",
+          "principais_componentes": [
+            "SQL Server Engine",
+            "Management Studio (SSMS)",
+            "Integration Services (SSIS)",
+            "Reporting Services (SSRS)"
+          ],
+          "para_que_serve": [
+            "Armazenar dados estruturados e transacionais",
+            "Criar relatórios e integrações corporativas"
+          ],
+          "quando_usar": [
+            "Quando a empresa já utiliza o ecossistema Microsoft",
+            "Para aplicações corporativas que exigem alta integração com Windows"
+          ]
+        }
+      },
+      {
+        "title": "Oracle Database",
+        "url": "https://www.oracle.com/database/",
+        "description": "Banco relacional muito usado em grandes empresas.",
+        "details": {
+          "o_que_e": "Sistema de gerenciamento de banco de dados relacional robusto, com suporte a alta disponibilidade, transações complexas e grandes volumes de dados.",
+          "principais_componentes": [
+            "Oracle Database Engine",
+            "Oracle SQL Developer",
+            "Oracle Real Application Clusters (RAC)",
+            "Oracle Data Guard"
+          ],
+          "para_que_serve": [
+            "Armazenar e gerenciar dados corporativos críticos",
+            "Suportar aplicações com alto volume e complexidade"
+          ],
+          "quando_usar": [
+            "Quando há necessidade de alta disponibilidade e escalabilidade",
+            "Para aplicações corporativas críticas"
+          ]
+        }
+      },
+      {
+        "title": "SQLite",
+        "url": "https://www.sqlite.org/",
+        "description": "Banco de dados relacional leve e embutido, muito usado em aplicativos móveis e desktop.",
+        "details": {
+          "o_que_e": "Um sistema de gerenciamento de banco de dados relacional que não requer servidor, armazenando os dados em arquivos locais. Suporta SQL e transações ACID.",
+          "principais_componentes": [
+            "Arquivo de banco de dados único (.sqlite ou .db)",
+            "Biblioteca embutida em aplicações",
+            "Suporte a SQL básico e transações",
+            "Compacto e de fácil distribuição"
+          ],
+          "para_que_serve": [
+            "Armazenar dados locais de aplicativos móveis ou desktop",
+            "Projetos pequenos que não precisam de servidor de banco de dados completo",
+            "Testes e prototipagem de bancos de dados relacionais"
+          ],
+          "quando_usar": [
+            "Quando se precisa de um banco leve e embutido",
+            "Para aplicações com poucos usuários simultâneos",
+            "Quando a portabilidade do banco é importante"
+          ]
+        }
+      }
+    ],
+    "Bancos de Dados NoSQL": [
+      {
+        "title": "MongoDB",
+        "url": "https://www.mongodb.com/",
+        "description": "Banco de dados NoSQL orientado a documentos, escalável e flexível.",
+        "details": {
+          "o_que_e": "Banco de dados orientado a documentos que armazena dados em formato JSON-like, permitindo esquemas flexíveis e fácil escalabilidade horizontal.",
+          "principais_componentes": [
+            "MongoDB Server: motor do banco",
+            "Mongo Shell / Compass: interfaces de consulta",
+            "Replica Sets: replicação para alta disponibilidade",
+            "Sharding: particionamento de dados"
+          ],
+          "para_que_serve": [
+            "Armazenar dados semi-estruturados",
+            "Suportar aplicações modernas que mudam frequentemente o esquema"
+          ],
+          "quando_usar": [
+            "Quando os dados não seguem esquema rígido",
+            "Para aplicações web e mobile que precisam de flexibilidade e escalabilidade"
+          ]
+        }
+      },
+      {
+        "title": "Apache Cassandra",
+        "url": "https://cassandra.apache.org/",
+        "description": "Banco NoSQL distribuído, projetado para alta disponibilidade e grande volume de dados.",
+        "details": {
+          "o_que_e": "Banco de dados NoSQL distribuído, focado em alta disponibilidade, tolerância a falhas e escalabilidade horizontal.",
+          "principais_componentes": [
+            "Cluster distribuído",
+            "Data replication e consistency levels",
+            "Query language CQL",
+            "Particionamento e replicação automática"
+          ],
+          "para_que_serve": [
+            "Armazenar grandes volumes de dados distribuídos",
+            "Garantir alta disponibilidade e tolerância a falhas"
+          ],
+          "quando_usar": [
+            "Quando a aplicação precisa escalar horizontalmente",
+            "Para cenários que exigem alta disponibilidade contínua"
+          ]
+        }
+      },
+      {
+        "title": "DynamoDB",
+        "url": "https://aws.amazon.com/dynamodb/",
+        "description": "Serviço gerenciado NoSQL da AWS, escalável e altamente disponível.",
+        "details": {
+          "o_que_e": "Banco de dados NoSQL totalmente gerenciado pela AWS, que oferece alta performance, escalabilidade e disponibilidade sem a necessidade de gerenciar servidores.",
+          "principais_componentes": [
+            "Tabelas e itens (documentos chave-valor)",
+            "Streams para integração com outras aplicações",
+            "Indexes globais secundários",
+            "Provisioned e On-demand capacity"
+          ],
+          "para_que_serve": [
+            "Armazenar dados sem esquema rígido",
+            "Aplicações serverless ou que exigem alta disponibilidade",
+            "Escalar automaticamente conforme demanda"
+          ],
+          "quando_usar": [
+            "Quando a empresa já usa AWS",
+            "Para aplicações que precisam de alta performance e escalabilidade automática",
+            "Para cenários serverless e microserviços"
+          ]
+        }
+      }
+    ],
+    "Big Data": [
+      {
+        "title": "Apache Spark",
+        "url": "https://spark.apache.org/",
+        "description": "Mecanismo de análise de dados distribuído, otimizado para alta velocidade e facilidade de uso.",
+        "details": 
+        {
+          "o_que_e": "Um mecanismo de análise de dados distribuído, de código aberto, que permite processar dados em batch e streaming com alta performance.",
+          "principais_componentes": 
+          [
+            "Spark Core: motor de processamento",
+            "Spark SQL: consultas estruturadas",
+            "Spark Streaming: processamento de dados em tempo real",
+            "MLlib: biblioteca de machine learning",
+            "GraphX: processamento de grafos"
+          ],
+          "para_que_serve": 
+          [
+            "Processar dados em batch e streaming com alta performance",
+            "Análises interativas, aprendizado de máquina e ETL em larga escala"
+          ],
+          "quando_usar": 
+          [
+            "Quando a velocidade é crítica",
+            "Para workloads de tempo real ou quase tempo real",
+            "Quando é necessário integrar análises avançadas em um único framework"
+          ]
+        }
+      },
+      {
+        "title": "Apache Hadoop",
+        "url": "https://hadoop.apache.org/",
+        "description": "Framework de código aberto para processamento distribuído de grandes volumes de dados em clusters de computadores.",
+        "details": 
+        {
+          "o_que_e": "Um framework de código aberto que permite o processamento distribuído de grandes volumes de dados em clusters de computadores.",
+          "principais_componentes": 
+          [
+            "HDFS (Hadoop Distributed File System): sistema de arquivos distribuído",
+            "YARN: gerenciador de recursos do cluster",
+            "MapReduce: modelo de programação para processamento paralelo"
+          ],
+          "para_que_serve": 
+          [
+            "Armazenar e processar dados em larga escala",
+            "Executar workloads batch distribuídos"
+          ],
+          "quando_usar": [
+            "Quando o foco é armazenamento massivo e processamento batch",
+            "Quando baixo custo é mais importante que velocidade"
+          ]
+        }
+      }
+    ],
     "Data Warehouses": [
       {
         "title": "Snowflake",
         "url": "https://www.snowflake.com/",
-        "description": "Plataforma de data warehouse em nuvem com escalabilidade elástica."
+        "description": "Plataforma de Data Warehouse baseada em nuvem, altamente escalável e com arquitetura única de separação entre computação e armazenamento.",
+        "details": {
+          "o_que_e": "Um data warehouse moderno em nuvem que oferece elasticidade, escalabilidade e suporte a múltiplos workloads analíticos sem necessidade de infraestrutura local.",
+          "principais_componentes": [
+            "Armazenamento elástico e escalável em nuvem",
+            "Warehouses virtuais para processamento paralelo",
+            "Suporte nativo a semi-estruturados (JSON, Avro, Parquet)",
+            "Integração com BI, ETL e ferramentas de Data Science"
+          ],
+          "para_que_serve": [
+            "Centralizar dados em um único repositório analítico na nuvem",
+            "Escalar consultas analíticas sem afetar performance de outros usuários",
+            "Reduzir custos de infraestrutura com modelo pay-as-you-go"
+          ],
+          "quando_usar": [
+            "Quando há demanda por escalabilidade sob demanda",
+            "Em empresas que querem eliminar gestão de hardware/infraestrutura",
+            "Quando há necessidade de suportar dados estruturados e semi-estruturados"
+          ]
+        }
       },
       {
         "title": "Amazon Redshift",
         "url": "https://aws.amazon.com/redshift/",
-        "description": "Serviço de data warehouse totalmente gerenciado da AWS."
+        "description": "Serviço de Data Warehouse em nuvem da AWS, otimizado para análises em larga escala e integração com o ecossistema AWS.",
+        "details": {
+          "o_que_e": "Um serviço de data warehouse gerenciado em nuvem, altamente integrado ao ecossistema AWS, projetado para consultas SQL analíticas de grandes volumes de dados.",
+          "principais_componentes": [
+            "Clusters de nós de computação e armazenamento",
+            "Integração nativa com Amazon S3, Athena e Glue",
+            "Suporte a consultas distribuídas em paralelo",
+            "Ferramentas de segurança e criptografia integradas"
+          ],
+          "para_que_serve": [
+            "Executar queries SQL analíticas em grandes volumes de dados",
+            "Integrar com pipelines de dados no ecossistema AWS",
+            "Construir relatórios e dashboards de BI em escala"
+          ],
+          "quando_usar": [
+            "Quando já há forte presença de infraestrutura AWS",
+            "Para workloads analíticos baseados em SQL",
+            "Quando o custo-benefício do cluster fixo compensa em cenários de uso constante"
+          ]
+        }
       }
     ],
     "Streaming": [
       {
         "title": "Apache Kafka",
         "url": "https://kafka.apache.org/",
-        "description": "Plataforma distribuída para processamento em streaming em tempo real."
+        "description": "Plataforma distribuída para processamento de fluxos de dados em tempo real.",
+        "details": {
+          "o_que_e": "Uma plataforma distribuída de streaming que permite publicar, assinar, armazenar e processar fluxos de dados em tempo real.",
+          "principais_componentes": [
+            "Producers: publicam mensagens em tópicos",
+            "Consumers: consomem mensagens dos tópicos",
+            "Brokers: servidores que armazenam e distribuem os dados",
+            "Zookeeper: coordenação do cluster (em versões mais antigas)"
+          ],
+          "para_que_serve": [
+            "Ingestão de dados em tempo real",
+            "Construção de pipelines de dados distribuídos",
+            "Integração entre sistemas usando eventos"
+          ],
+          "quando_usar": [
+            "Quando é necessário processar grandes volumes de eventos em tempo real",
+            "Para integrar múltiplos sistemas via mensageria",
+            "Em arquiteturas orientadas a eventos (event-driven)"
+          ]
+        }
       }
     ],
-    "Transformação": [
+    "Modelagem de Dados": [
       {
-        "title": "DBT",
+        "title": "DBT (Data Build Tool)",
         "url": "https://www.getdbt.com/",
-        "description": "Ferramenta de transformação de dados com SQL, documentação e versionamento."
+        "description": "Ferramenta de transformação de dados orientada a SQL que permite criar modelos analíticos versionados e testáveis.",
+        "details": {
+          "o_que_e": "Um framework de transformação que utiliza SQL para modelar, transformar e documentar dados dentro do Data Warehouse.",
+          "principais_componentes": [
+            "DBT Core: versão open source",
+            "DBT Cloud: versão SaaS com orquestração e UI",
+            "Macros e Jinja: lógica programável sobre SQL",
+            "Testes automatizados de qualidade"
+          ],
+          "para_que_serve": [
+            "Criar modelos analíticos reutilizáveis",
+            "Automatizar transformações em ELT",
+            "Versionar transformações com Git"
+          ],
+          "quando_usar": [
+            "Quando já se tem um Data Warehouse moderno (Snowflake, BigQuery, Redshift)",
+            "Para padronizar transformações em SQL",
+            "Quando times de dados precisam colaborar em modelagem"
+          ]
+        }
+      },
+      {
+        "title": "Apache Beam",
+        "url": "https://beam.apache.org/",
+        "description": "Framework unificado para processamento em batch e streaming.",
+        "details": {
+          "o_que_e": "Uma abstração de pipeline que permite escrever transformações uma vez e executá-las em múltiplos engines (Spark, Flink, Google Dataflow).",
+          "principais_componentes": [
+            "SDKs (Java, Python, Go)",
+            "Pipeline API",
+            "Runners para Spark, Flink, Dataflow",
+            "Windowing e triggers para streaming"
+          ],
+          "para_que_serve": [
+            "Transformação de dados em batch e streaming",
+            "Independência de engine de execução",
+            "Integração com diversos conectores"
+          ],
+          "quando_usar": [
+            "Quando há necessidade de portabilidade entre engines",
+            "Para pipelines que misturam batch e streaming",
+            "Em projetos que já usam Google Cloud Dataflow"
+          ]
+        }
+      },
+      {
+        "title": "Databricks Delta Live Tables",
+        "url": "https://www.databricks.com/product/delta-live-tables",
+        "description": "Framework de transformação declarativa baseado em Spark e Delta Lake para criar pipelines confiáveis e automatizados.",
+        "details": {
+          "o_que_e": "Uma solução do Databricks que permite criar pipelines de dados com transformações declarativas em SQL ou Python, integrando qualidade de dados e monitoramento automático.",
+          "principais_componentes": [
+            "Pipelines declarativos em SQL ou Python",
+            "Integração nativa com Delta Lake",
+            "Quality rules: validação de dados durante a ingestão e transformação",
+            "Orquestração automática e monitoramento visual",
+            "Escalabilidade baseada em clusters Databricks"
+          ],
+          "para_que_serve": [
+            "Construir pipelines de ETL/ELT confiáveis e escaláveis",
+            "Garantir qualidade de dados com regras automáticas",
+            "Automatizar transformações sem gerenciar infraestrutura de clusters"
+          ],
+          "quando_usar": [
+            "Quando se trabalha com Delta Lake ou Databricks",
+            "Para pipelines que exigem monitoramento e qualidade integrada",
+            "Quando se deseja simplificar a orquestração de transformações declarativas"
+          ]
+        }
+      }
+    ],
+    "Orquestração": [
+      {
+        "title": "Airbyte",
+        "url": "https://airbyte.com/",
+        "description": "Plataforma open source de integração de dados que permite mover dados entre múltiplas fontes e destinos com facilidade.",
+        "details": {
+          "o_que_e": "Um sistema de integração de dados open source que facilita a movimentação e sincronização de dados entre diferentes sistemas, APIs e Data Warehouses.",
+          "principais_componentes": [
+            "Conectores para múltiplas fontes e destinos",
+            "Interface visual para configuração de pipelines",
+            "Monitoramento e logs centralizados",
+            "Extensível com conectores customizados"
+          ],
+          "para_que_serve": [
+            "Integrar dados de sistemas diversos para Data Warehouses ou Lakes",
+            "Automatizar pipelines de ingestão de dados",
+            "Facilitar a replicação de dados entre ambientes"
+          ],
+          "quando_usar": [
+            "Quando há múltiplas fontes de dados a serem integradas",
+            "Para pipelines que precisam de monitoramento simples e escalável",
+            "Quando se deseja uma solução open source e extensível"
+          ]
+        }
+      },
+      {
+        "title": "Apache Airflow",
+        "url": "https://airflow.apache.org/",
+        "description": "Plataforma open source para orquestração de workflows e pipelines de dados, baseada em DAGs (Directed Acyclic Graphs).",
+        "details": {
+          "o_que_e": "Um framework open source que permite criar, agendar e monitorar pipelines de dados complexos, usando DAGs para organizar tarefas e dependências.",
+          "principais_componentes": [
+            "Scheduler: agenda execução de tarefas",
+            "Executor: define como as tarefas são processadas",
+            "Web UI: interface para monitoramento e gestão de DAGs",
+            "Operadores e Hooks: abstrações para tarefas e conexões"
+          ],
+          "para_que_serve": [
+            "Orquestrar pipelines de dados complexos",
+            "Agendar tarefas de ETL, transformações e integrações",
+            "Monitorar falhas e re-executar tarefas automaticamente"
+          ],
+          "quando_usar": [
+            "Quando há pipelines de múltiplas etapas e dependências",
+            "Para ambientes que exigem monitoramento e alertas de falhas",
+            "Quando se quer separar lógica de execução da transformação de dados"
+          ]
+        }
+      }
+    ],
+    "Visualização de Dados / BI": [
+      {
+        "title": "Power BI",
+        "url": "https://powerbi.microsoft.com/",
+        "description": "Plataforma de BI da Microsoft para criação de dashboards interativos e relatórios visuais.",
+        "details": {
+          "o_que_e": "Ferramenta de Business Intelligence que permite criar relatórios e dashboards interativos, conectando-se a múltiplas fontes de dados.",
+          "principais_componentes": [
+            "Power BI Desktop: criação de relatórios",
+            "Power BI Service: publicação e colaboração online",
+            "Power BI Mobile: visualização em dispositivos móveis"
+          ],
+          "para_que_serve": [
+            "Criar dashboards interativos",
+            "Analisar dados de múltiplas fontes",
+            "Compartilhar insights com equipes"
+          ],
+          "quando_usar": [
+            "Quando se deseja explorar dados visualmente",
+            "Para relatórios empresariais e análises rápidas",
+            "Quando é importante integração com Microsoft 365 e Azure"
+          ]
+        }
+      },
+      {
+        "title": "Tableau",
+        "url": "https://www.tableau.com/",
+        "description": "Ferramenta de visualização de dados e BI para criar dashboards interativos e análises visuais.",
+        "details": {
+          "o_que_e": "Plataforma de Business Intelligence focada em visualização de dados, permitindo explorar e compartilhar insights rapidamente.",
+          "principais_componentes": [
+            "Tableau Desktop: criação de dashboards",
+            "Tableau Server / Online: publicação e colaboração",
+            "Tableau Prep: preparação e transformação de dados"
+          ],
+          "para_que_serve": [
+            "Analisar dados de maneira visual e interativa",
+            "Criar dashboards customizados",
+            "Compartilhar insights com diferentes stakeholders"
+          ],
+          "quando_usar": [
+            "Quando se quer explorar dados visualmente",
+            "Para relatórios corporativos e análises complexas",
+            "Quando equipes precisam colaborar em dashboards interativos"
+          ]
+        }
+      },
+      {
+        "title": "Looker",
+        "url": "https://looker.com/",
+        "description": "Plataforma de BI moderna que conecta diretamente a Data Warehouses para análises escaláveis.",
+        "details": {
+          "o_que_e": "Ferramenta de Business Intelligence que permite explorar, analisar e compartilhar dados diretamente de Data Warehouses usando modelos centralizados e métricas consistentes.",
+          "principais_componentes": [
+            "LookML: linguagem para modelagem de dados",
+            "Explores: interface para explorar dados",
+            "Dashboards e relatórios interativos"
+          ],
+          "para_que_serve": [
+            "Conectar e analisar dados diretamente de Data Warehouses",
+            "Garantir consistência de métricas entre equipes",
+            "Criar dashboards interativos e relatórios escaláveis"
+          ],
+          "quando_usar": [
+            "Quando se trabalha com grandes volumes de dados centralizados",
+            "Para análises consistentes e colaborativas",
+            "Quando se deseja separar modelagem de dados da visualização"
+          ]
+        }
+      }
+    ],
+    "IaC": [
+      {
+        "title": "Terraform",
+        "url": "https://www.terraform.io/",
+        "description": "Ferramenta de Infrastructure as Code para criar, modificar e versionar infraestrutura de forma segura e automatizada.",
+        "details": {
+          "o_que_e": "Uma ferramenta open source que permite definir infraestrutura em arquivos de configuração declarativos, facilitando a criação e gestão de recursos em múltiplos provedores de nuvem.",
+          "principais_componentes": [
+            "HCL (HashiCorp Configuration Language): linguagem declarativa para definir infraestrutura",
+            "Providers: conectores para diferentes nuvens e serviços",
+            "State: arquivo que mantém o estado atual da infraestrutura",
+            "Modules: pacotes reutilizáveis de configuração"
+          ],
+          "para_que_serve": [
+            "Provisionar infraestrutura em múltiplos provedores de nuvem",
+            "Versionar e reproduzir ambientes",
+            "Automatizar criação e destruição de recursos"
+          ],
+          "quando_usar": [
+            "Quando se deseja gerenciar infraestrutura de forma declarativa",
+            "Para projetos multi-cloud ou híbridos",
+            "Quando é necessário automatizar e padronizar ambientes"
+          ]
+        }
+      }
+    ],
+    "Bibliotecas Python": [
+      {
+        "title": "Pandas",
+        "description": "Biblioteca para manipulação e análise de dados, com estruturas como DataFrame e Series."
+      },
+      {
+        "title": "NumPy",
+        "description": "Biblioteca para computação científica com suporte a arrays e operações matemáticas de alto desempenho."
+      },
+      {
+        "title": "Matplotlib",
+        "description": "Biblioteca para criação de gráficos estáticos, animados e interativos em Python."
+      },
+      {
+        "title": "Seaborn",
+        "description": "Biblioteca para visualização estatística baseada em Matplotlib, com gráficos mais bonitos e informativos."
+      },
+      {
+        "title": "Scikit-learn",
+        "description": "Biblioteca para machine learning em Python, com algoritmos de classificação, regressão e clustering."
+      },
+      {
+        "title": "PySpark",
+        "description": "Interface Python para Apache Spark, permitindo processamento distribuído de grandes volumes de dados."
+      },
+      {
+        "title": "SQLAlchemy",
+        "description": "Toolkit de SQL e ORM para Python, permitindo trabalhar com bancos de dados de forma programática."
+      },
+      {
+        "title": "TensorFlow",
+        "description": "Biblioteca de machine learning e deep learning para criação e treinamento de modelos complexos."
+      },
+      {
+        "title": "Keras",
+        "description": "API de alto nível para TensorFlow, focada em facilitar a criação e treino de redes neurais."
       }
     ]
   }
