@@ -328,7 +328,9 @@
             "Producers: publicam mensagens em tópicos",
             "Consumers: consomem mensagens dos tópicos",
             "Brokers: servidores que armazenam e distribuem os dados",
-            "Zookeeper: coordenação do cluster (em versões mais antigas)"
+            "Zookeeper: coordenação do cluster (em versões mais antigas)",
+            "[EXTRA] Kafka Schema Registry: Permite que os producers enviem dados codificados de acordo com schemas definidos e registrados. Antes de processar ou consumir dados, os consumers podem consultar o Schema Registry para garantir que estão usando a versão correta do esquema, evitando erros de serialização ou incompatibilidades de estrutura.",
+            "[EXTRA] Kafka Control Center: Ferramenta de gerenciamento e monitoramento projetada para simplificar a adminsitração de clusters do Apache Kafka. Com uma interface gráfica intuitiva, facilita a operação de pipelines de dados, garantindo maior controle e visibilidade sobre o funcionamento do cluster."
           ],
           "para_que_serve": [
             "Ingestão de dados em tempo real",
