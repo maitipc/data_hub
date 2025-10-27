@@ -11,6 +11,16 @@
         "title": "Airbyte em ETL e ELT",
         "url": "https://blog.dsacademy.com.br/airbyte-etl-e-elt-para-engenharia-de-dados/",
         "description": "Explicação, Vantagens e Desvantagens do Airbyte."
+      },
+      {
+        "title": "Como o Netflix Armazena 140 Milhões de Horas de Dados por Dia — E o Que Isso Ensina Sobre Arquitetura em Escala",
+        "url": "https://medium.com/data-hackers/como-o-netflix-armazena-140-milh%C3%B5es-de-horas-de-dados-por-dia-e-o-que-isso-ensina-sobre-aae212ade578",
+        "description": "Uma aula de engenharia de dados aplicada à realidade — sem glamour, só decisões arquiteturais sólidas, ancoradas em observabilidade e eficiência."
+      },
+      {
+        "title": "Porque é que você deve repensar as suas consultas (queries)",
+        "url": "https://medium.com/data-hackers/porque-%C3%A9-que-voc%C3%AA-deve-repensar-as-suas-consultas-queries-6c2149cdcdc4",
+        "description": "Entendendo o que é um JOIN implícito, um JOIN explícito e as suas diferenças."
       }
     ]
   },
