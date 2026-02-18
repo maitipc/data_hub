@@ -21,6 +21,11 @@
         "title": "Porque é que você deve repensar as suas consultas (queries)",
         "url": "https://medium.com/data-hackers/porque-%C3%A9-que-voc%C3%AA-deve-repensar-as-suas-consultas-queries-6c2149cdcdc4",
         "description": "Entendendo o que é um JOIN implícito, um JOIN explícito e as suas diferenças."
+      },
+      {
+        "title": "Star Schema vs. Snowflake Schema - Diferenças e Casos de Uso",
+        "url": "https://www.datacamp.com/pt/blog/star-schema-vs-snowflake-schema",
+        "description": "Explicando duas formas comuns de organizar dados em warehouses: Como eles funcionam, como são diferentes e quando usar cada um."
       }
     ]
   },
